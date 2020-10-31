@@ -1005,13 +1005,13 @@ Wire Wire Line
 	8000 4600 8400 4600
 Wire Wire Line
 	8000 4700 8400 4700
-Text Label 8000 4050 0    50   ~ 0
-XCVR_TXD
-Text Label 8000 4150 0    50   ~ 0
-XCVR_RTS
-Text Label 8000 4250 0    50   ~ 0
-XCVR_DTR
 Text Label 8000 4500 0    50   ~ 0
+XCVR_TXD
+Text Label 8000 4600 0    50   ~ 0
+XCVR_RTS
+Text Label 8000 4700 0    50   ~ 0
+XCVR_DTR
+Text Label 8000 4050 0    50   ~ 0
 XCVR_RXD
 $Comp
 L Connector_Generic:Conn_01x08 J?
@@ -1042,21 +1042,21 @@ Entry Wire Line
 	10500 4600 10600 4700
 Entry Wire Line
 	10500 4700 10600 4800
-Text Label 8000 4600 0    50   ~ 0
+Text Label 8000 4150 0    50   ~ 0
 XCVR_CTS
-Text Label 8000 4700 0    50   ~ 0
+Text Label 8000 4250 0    50   ~ 0
 XCVR_DSR
-Text Label 9950 4050 0    50   ~ 0
-RS232_TXD
-Text Label 9950 4150 0    50   ~ 0
-RS232_RTS
-Text Label 9950 4250 0    50   ~ 0
-RS232_DTR
 Text Label 9950 4500 0    50   ~ 0
-RS232_RXD
+RS232_TXD
 Text Label 9950 4600 0    50   ~ 0
-RS232_CTS
+RS232_RTS
 Text Label 9950 4700 0    50   ~ 0
+RS232_DTR
+Text Label 9950 4050 0    50   ~ 0
+RS232_RXD
+Text Label 9950 4150 0    50   ~ 0
+RS232_CTS
+Text Label 9950 4250 0    50   ~ 0
 RS232_DSR
 Wire Wire Line
 	9900 4050 10500 4050
