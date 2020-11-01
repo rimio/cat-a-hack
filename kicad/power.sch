@@ -28,7 +28,7 @@ F 3 "~" H 5650 3050 50  0001 C CNN
 	1    5650 3050
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5650 3250 3    50   Input ~ 0
+Text GLabel 5650 3800 3    50   Input ~ 0
 XCVR_5V
 Text Notes 5800 2800 2    39   ~ 0
 One jumper
@@ -164,7 +164,7 @@ Wire Wire Line
 Wire Wire Line
 	8100 3600 8000 3600
 Text GLabel 8100 3600 2    50   Input ~ 0
-XCVR_VCC
+XCVR_13V8
 $Comp
 L custom:L78M05CDT-TR U2
 U 1 1 608A3B2A
@@ -249,4 +249,49 @@ Wire Wire Line
 Connection ~ 4550 3900
 Wire Wire Line
 	4550 3900 4900 3900
+$Comp
+L Device:R_Small R?
+U 1 1 5FDD2952
+P 6000 3850
+AR Path="/5FDD2952" Ref="R?"  Part="1" 
+AR Path="/5F9D7A3C/5FDD2952" Ref="R1"  Part="1" 
+AR Path="/5F9E7705/5FDD2952" Ref="R?"  Part="1" 
+F 0 "R1" H 5900 3850 50  0000 C CNN
+F 1 "470" H 6100 3850 50  0000 C CNN
+F 2 "" H 6000 3850 50  0001 C CNN
+F 3 "~" H 6000 3850 50  0001 C CNN
+	1    6000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FDD2958
+P 6000 4150
+AR Path="/5FDD2958" Ref="D?"  Part="1" 
+AR Path="/5F9D7A3C/5FDD2958" Ref="D1"  Part="1" 
+AR Path="/5F9E7705/5FDD2958" Ref="D?"  Part="1" 
+F 0 "D1" V 6000 4250 50  0000 C CNN
+F 1 "BG1102W-TR" H 5950 4000 50  0000 C CNN
+F 2 "" H 6000 4150 50  0001 C CNN
+F 3 "~" H 6000 4150 50  0001 C CNN
+	1    6000 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 3950 6000 4000
+Text GLabel 5950 4450 0    50   Input ~ 0
+XCVR_GND
+Wire Wire Line
+	6000 4450 5950 4450
+Wire Wire Line
+	6000 4300 6000 4450
+Wire Wire Line
+	5650 3250 5650 3700
+Wire Wire Line
+	5650 3700 6000 3700
+Wire Wire Line
+	6000 3700 6000 3750
+Connection ~ 5650 3700
+Wire Wire Line
+	5650 3700 5650 3800
 $EndSCHEMATC
