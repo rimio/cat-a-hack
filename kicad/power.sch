@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title "cat-a-hack"
 Date ""
-Rev "r1"
+Rev "r2"
 Comp "Vasile Vilvoiu (YO7JBP)"
 Comment1 "CAT and audio hackable isolation board"
 Comment2 "Transceiver-side power circuit"
