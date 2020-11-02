@@ -21,22 +21,9 @@ AR Path="/5FA9890D" Ref="J?"  Part="1"
 AR Path="/5F9E817D/5FA9890D" Ref="J13"  Part="1" 
 F 0 "J13" H 2400 3450 50  0000 L CNN
 F 1 "L/R channel choice" H 2050 3050 50  0000 L CNN
-F 2 "" H 2450 3250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2450 3250 50  0001 C CNN
 F 3 "~" H 2450 3250 50  0001 C CNN
 	1    2450 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J?
-U 1 1 5FA98916
-P 3000 2800
-AR Path="/5FA98916" Ref="J?"  Part="1" 
-AR Path="/5F9E817D/5FA98916" Ref="J15"  Part="1" 
-F 0 "J15" H 3050 3000 50  0000 C CNN
-F 1 "CITA/OMTP choice" H 3050 2600 50  0000 C CNN
-F 2 "" H 3000 2800 50  0001 C CNN
-F 3 "~" H 3000 2800 50  0001 C CNN
-	1    3000 2800
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3300 2800
@@ -48,7 +35,7 @@ AR Path="/5FA98922" Ref="J?"  Part="1"
 AR Path="/5F9E817D/5FA98922" Ref="J16"  Part="1" 
 F 0 "J16" H 4100 3950 50  0000 L CNN
 F 1 "TRRS/TRS+TS choice" H 3800 3550 50  0000 L CNN
-F 2 "" H 4150 3750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4150 3750 50  0001 C CNN
 F 3 "~" H 4150 3750 50  0001 C CNN
 	1    4150 3750
 	1    0    0    -1  
@@ -61,7 +48,7 @@ AR Path="/5FAA7D10" Ref="J?"  Part="1"
 AR Path="/5F9E817D/5FAA7D10" Ref="J10"  Part="1" 
 F 0 "J10" H 1257 4875 50  0000 C CNN
 F 1 "PC_AUDIO_EXTRA" H 1257 4784 50  0000 C CNN
-F 2 "" H 1300 4550 50  0001 C CNN
+F 2 "custom:SJ43514" H 1300 4550 50  0001 C CNN
 F 3 "~" H 1300 4550 50  0001 C CNN
 	1    1300 4550
 	1    0    0    -1  
@@ -74,7 +61,7 @@ AR Path="/5FAA7D16" Ref="J?"  Part="1"
 AR Path="/5F9E817D/5FAA7D16" Ref="J8"  Part="1" 
 F 0 "J8" H 1257 3175 50  0000 C CNN
 F 1 "PC_AUDIO_IO" H 1257 3084 50  0000 C CNN
-F 2 "" H 1300 2850 50  0001 C CNN
+F 2 "custom:SJ43514" H 1300 2850 50  0001 C CNN
 F 3 "~" H 1300 2850 50  0001 C CNN
 	1    1300 2850
 	1    0    0    -1  
@@ -95,7 +82,7 @@ AR Path="/5FAA7D24" Ref="J?"  Part="1"
 AR Path="/5F9E817D/5FAA7D24" Ref="J11"  Part="1" 
 F 0 "J11" H 1800 4750 50  0000 L CNN
 F 1 "Jack header" H 1650 4250 50  0000 L CNN
-F 2 "" H 1850 4550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1850 4550 50  0001 C CNN
 F 3 "~" H 1850 4550 50  0001 C CNN
 	1    1850 4550
 	1    0    0    -1  
@@ -108,7 +95,7 @@ AR Path="/5FAA7D2A" Ref="J?"  Part="1"
 AR Path="/5F9E817D/5FAA7D2A" Ref="J9"  Part="1" 
 F 0 "J9" H 1257 3975 50  0000 C CNN
 F 1 "PC_AUDIO_OUT" H 1257 3884 50  0000 C CNN
-F 2 "" H 1300 3650 50  0001 C CNN
+F 2 "custom:SJ43514" H 1300 3650 50  0001 C CNN
 F 3 "~" H 1300 3650 50  0001 C CNN
 	1    1300 3650
 	1    0    0    -1  
@@ -125,7 +112,7 @@ AR Path="/5FB08005" Ref="J?"  Part="1"
 AR Path="/5F9E817D/5FB08005" Ref="J12"  Part="1" 
 F 0 "J12" H 1950 2450 50  0000 L CNN
 F 1 "Jack header" H 1800 1950 50  0000 L CNN
-F 2 "" H 2000 2250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2000 2250 50  0001 C CNN
 F 3 "~" H 2000 2250 50  0001 C CNN
 	1    2000 2250
 	1    0    0    -1  
@@ -133,14 +120,14 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5FB0800F
-P 2450 4000
+P 2950 4000
 AR Path="/5FB0800F" Ref="J?"  Part="1" 
 AR Path="/5F9E817D/5FB0800F" Ref="J14"  Part="1" 
-F 0 "J14" H 2400 4100 50  0000 L CNN
-F 1 "Jack header" H 2250 3800 50  0000 L CNN
-F 2 "" H 2450 4000 50  0001 C CNN
-F 3 "~" H 2450 4000 50  0001 C CNN
-	1    2450 4000
+F 0 "J14" H 2900 4100 50  0000 L CNN
+F 1 "Jack header" H 2750 3800 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2950 4000 50  0001 C CNN
+F 3 "~" H 2950 4000 50  0001 C CNN
+	1    2950 4000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -151,26 +138,15 @@ AR Path="/5FB08016" Ref="J?"  Part="1"
 AR Path="/5F9E817D/5FB08016" Ref="J17"  Part="1" 
 F 0 "J17" H 5580 3492 50  0000 L CNN
 F 1 "Audio header" H 5580 3401 50  0000 L CNN
-F 2 "" H 5500 3450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5500 3450 50  0001 C CNN
 F 3 "~" H 5500 3450 50  0001 C CNN
 	1    5500 3450
 	1    0    0    -1  
 $EndComp
-Text GLabel 2250 4100 0    39   Input ~ 0
+Text GLabel 2750 4000 0    39   Input ~ 0
 PC_AUDIO_GND
 Text GLabel 5300 3550 0    39   Input ~ 0
 PC_AUDIO_GND
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J18
-U 1 1 5FB0C823
-P 8950 4800
-F 0 "J18" H 9000 5000 50  0000 C CNN
-F 1 "Xcvr grounding jumpers" H 9000 4550 50  0000 C CNN
-F 2 "" H 8950 4800 50  0001 C CNN
-F 3 "~" H 8950 4800 50  0001 C CNN
-	1    8950 4800
-	1    0    0    -1  
-$EndComp
 Text GLabel 8750 4900 0    50   Input ~ 0
 XCVR_PTT-
 Text Notes 7100 2600 1    50   ~ 0
@@ -217,17 +193,11 @@ Wire Wire Line
 Text Notes 4000 4100 0    50   ~ 0
 One jumper
 Wire Wire Line
-	5300 3350 4700 3350
-Wire Wire Line
 	4700 3350 4700 3250
 Wire Wire Line
 	5300 3450 4700 3450
 Wire Wire Line
 	4700 3450 4700 3750
-Wire Wire Line
-	2250 4000 2150 4000
-Wire Wire Line
-	2150 4000 2150 3850
 Connection ~ 2150 3850
 Wire Wire Line
 	2150 3850 3950 3850
@@ -271,7 +241,7 @@ U 1 1 6082EBC6
 P 6650 3150
 F 0 "T1" H 7100 3415 50  0000 C CNN
 F 1 "T6003NL" H 7100 3324 50  0000 C CNN
-F 2 "T6003NL" H 8300 3250 50  0001 L CNN
+F 2 "custom:T6003NL_HandSolder" H 8300 3250 50  0001 L CNN
 F 3 "https://productfinder.pulseeng.com/products/datasheets/T628.pdf" H 8300 3200 50  0001 L CNN
 F 4 "Audio Transformers / Signal Transformers SMD Audio Xfmr 70Ohms" H 8300 3100 50  0001 L CNN "Description"
 F 5 "12.32" H 8300 3000 50  0001 L CNN "Height"
@@ -288,7 +258,7 @@ U 1 1 60835AA4
 P 6650 4200
 F 0 "T2" H 7100 4465 50  0000 C CNN
 F 1 "T6003NL" H 7100 4374 50  0000 C CNN
-F 2 "T6003NL" H 8300 4300 50  0001 L CNN
+F 2 "custom:T6003NL_HandSolder" H 8300 4300 50  0001 L CNN
 F 3 "https://productfinder.pulseeng.com/products/datasheets/T628.pdf" H 8300 4250 50  0001 L CNN
 F 4 "Audio Transformers / Signal Transformers SMD Audio Xfmr 70Ohms" H 8300 4150 50  0001 L CNN "Description"
 F 5 "12.32" H 8300 4050 50  0001 L CNN "Height"
@@ -359,7 +329,7 @@ AR Path="/5FAAD65E" Ref="J?"  Part="1"
 AR Path="/5F9E817D/5FAAD65E" Ref="J19"  Part="1" 
 F 0 "J19" H 9950 3650 50  0000 L CNN
 F 1 "XCVR_Audio" H 9800 2900 50  0000 L CNN
-F 2 "" H 10000 3350 50  0001 C CNN
+F 2 "custom:TB003-500-P06BE" H 10000 3350 50  0001 C CNN
 F 3 "~" H 10000 3350 50  0001 C CNN
 	1    10000 3350
 	1    0    0    -1  
@@ -374,7 +344,7 @@ AR Path="/5F9E817D/5FC37879" Ref="C20"  Part="1"
 AR Path="/5F9E7705/5FC37879" Ref="C?"  Part="1" 
 F 0 "C20" H 10100 3500 50  0000 L CNN
 F 1 "100n" V 10350 3300 50  0000 L CNN
-F 2 "" H 10250 3400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10250 3400 50  0001 C CNN
 F 3 "~" H 10250 3400 50  0001 C CNN
 	1    10250 3400
 	1    0    0    -1  
@@ -386,8 +356,8 @@ P 10250 2850
 AR Path="/5F9E7705/5FC37881" Ref="D?"  Part="1" 
 AR Path="/5F9E817D/5FC37881" Ref="D9"  Part="1" 
 F 0 "D9" V 10250 2750 50  0000 C CNN
-F 1 "TBD" V 10250 3000 50  0000 C CNN
-F 2 "" V 10250 2850 50  0001 C CNN
+F 1 "1N4148X-TP" V 10250 3150 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" V 10250 2850 50  0001 C CNN
 F 3 "~" V 10250 2850 50  0001 C CNN
 	1    10250 2850
 	0    1    1    0   
@@ -425,7 +395,7 @@ AR Path="/5F9E7705/5FDABC92" Ref="R?"  Part="1"
 AR Path="/5F9E817D/5FDABC92" Ref="R30"  Part="1" 
 F 0 "R30" H 10550 3150 50  0000 C CNN
 F 1 "2.2k" V 10750 3150 50  0000 C CNN
-F 2 "" H 10650 3150 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10650 3150 50  0001 C CNN
 F 3 "~" H 10650 3150 50  0001 C CNN
 	1    10650 3150
 	1    0    0    -1  
@@ -440,7 +410,7 @@ AR Path="/5F9E7705/5FDABC98" Ref="D?"  Part="1"
 AR Path="/5F9E817D/5FDABC98" Ref="D10"  Part="1" 
 F 0 "D10" V 10650 3700 50  0000 C CNN
 F 1 "BG1102W-TR" H 10550 3400 50  0000 C CNN
-F 2 "" H 10650 3550 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10650 3550 50  0001 C CNN
 F 3 "~" H 10650 3550 50  0001 C CNN
 	1    10650 3550
 	0    -1   -1   0   
@@ -466,12 +436,6 @@ Text Label 7600 3250 0    50   ~ 0
 XCVR_AUDIO_OUT+
 Connection ~ 4700 3250
 Connection ~ 4700 3750
-Wire Wire Line
-	4700 3750 4850 3750
-Wire Wire Line
-	4700 3250 4850 3250
-Wire Wire Line
-	2250 3250 4300 3250
 Text Label 6150 3250 0    50   ~ 0
 AUDIO_IN
 Text Label 6150 4300 0    50   ~ 0
@@ -484,7 +448,7 @@ AR Path="/5F9E7705/5FF738C4" Ref="JP?"  Part="1"
 AR Path="/5F9E817D/5FF738C4" Ref="JP14"  Part="1" 
 F 0 "JP14" H 8600 3300 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 8450 3364 50  0001 C CNN
-F 2 "" H 8450 3250 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8450 3250 50  0001 C CNN
 F 3 "~" H 8450 3250 50  0001 C CNN
 	1    8450 3250
 	1    0    0    -1  
@@ -503,7 +467,7 @@ AR Path="/5F9E7705/5FF7A2F0" Ref="JP?"  Part="1"
 AR Path="/5F9E817D/5FF7A2F0" Ref="JP15"  Part="1" 
 F 0 "JP15" H 8600 3500 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 8450 3564 50  0001 C CNN
-F 2 "" H 8450 3450 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8450 3450 50  0001 C CNN
 F 3 "~" H 8450 3450 50  0001 C CNN
 	1    8450 3450
 	1    0    0    -1  
@@ -516,7 +480,7 @@ AR Path="/5F9E7705/5FF7BC41" Ref="JP?"  Part="1"
 AR Path="/5F9E817D/5FF7BC41" Ref="JP13"  Part="1" 
 F 0 "JP13" H 8550 4550 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 8400 4614 50  0001 C CNN
-F 2 "" H 8400 4500 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8400 4500 50  0001 C CNN
 F 3 "~" H 8400 4500 50  0001 C CNN
 	1    8400 4500
 	1    0    0    -1  
@@ -531,71 +495,45 @@ AR Path="/5F9E7705/5FF7B162" Ref="JP?"  Part="1"
 AR Path="/5F9E817D/5FF7B162" Ref="JP12"  Part="1" 
 F 0 "JP12" H 8550 4350 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 8400 4414 50  0001 C CNN
-F 2 "" H 8400 4300 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8400 4300 50  0001 C CNN
 F 3 "~" H 8400 4300 50  0001 C CNN
 	1    8400 4300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4700 3250 6650 3250
+Wire Wire Line
+	4700 3750 5950 3750
 $Comp
-L Jumper:SolderJumper_2_Bridged JP?
-U 1 1 5FF7DD37
-P 5000 3250
-AR Path="/5F9E7705/5FF7DD37" Ref="JP?"  Part="1" 
-AR Path="/5F9E817D/5FF7DD37" Ref="JP10"  Part="1" 
-F 0 "JP10" H 5150 3300 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5000 3364 50  0001 C CNN
-F 2 "" H 5000 3250 50  0001 C CNN
-F 3 "~" H 5000 3250 50  0001 C CNN
-	1    5000 3250
+L Connector_Generic:Conn_02x03_Odd_Even J15
+U 1 1 5FBCD1E3
+P 3000 2800
+F 0 "J15" H 3050 3000 50  0000 C CNN
+F 1 "CITA/OMTP choice" H 3050 2600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3000 2800 50  0001 C CNN
+F 3 "~" H 3000 2800 50  0001 C CNN
+	1    3000 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Bridged JP?
-U 1 1 5FF7F2F6
-P 4450 3250
-AR Path="/5F9E7705/5FF7F2F6" Ref="JP?"  Part="1" 
-AR Path="/5F9E817D/5FF7F2F6" Ref="JP8"  Part="1" 
-F 0 "JP8" H 4600 3300 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 4450 3364 50  0001 C CNN
-F 2 "" H 4450 3250 50  0001 C CNN
-F 3 "~" H 4450 3250 50  0001 C CNN
-	1    4450 3250
+L Connector_Generic:Conn_02x03_Odd_Even J18
+U 1 1 5FBEAB0B
+P 8950 4800
+F 0 "J18" H 9000 5000 50  0000 C CNN
+F 1 "Xcvr grounding jumpers" H 9000 4550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8950 4800 50  0001 C CNN
+F 3 "~" H 8950 4800 50  0001 C CNN
+	1    8950 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 3250 4700 3250
+	2150 4100 2750 4100
 Wire Wire Line
-	4600 3750 4700 3750
-$Comp
-L Jumper:SolderJumper_2_Bridged JP?
-U 1 1 5FF8015D
-P 5000 3750
-AR Path="/5F9E7705/5FF8015D" Ref="JP?"  Part="1" 
-AR Path="/5F9E817D/5FF8015D" Ref="JP11"  Part="1" 
-F 0 "JP11" H 5150 3800 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5000 3864 50  0001 C CNN
-F 2 "" H 5000 3750 50  0001 C CNN
-F 3 "~" H 5000 3750 50  0001 C CNN
-	1    5000 3750
-	1    0    0    -1  
-$EndComp
+	2150 3850 2150 4100
 Wire Wire Line
-	5150 3750 5950 3750
+	5300 3350 4700 3350
 Wire Wire Line
-	5150 3250 6650 3250
+	3950 3750 4700 3750
 Wire Wire Line
-	3950 3750 4300 3750
-$Comp
-L Jumper:SolderJumper_2_Bridged JP?
-U 1 1 5FF7F79F
-P 4450 3750
-AR Path="/5F9E7705/5FF7F79F" Ref="JP?"  Part="1" 
-AR Path="/5F9E817D/5FF7F79F" Ref="JP9"  Part="1" 
-F 0 "JP9" H 4600 3800 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 4450 3864 50  0001 C CNN
-F 2 "" H 4450 3750 50  0001 C CNN
-F 3 "~" H 4450 3750 50  0001 C CNN
-	1    4450 3750
-	1    0    0    -1  
-$EndComp
+	2250 3250 4700 3250
 $EndSCHEMATC

@@ -38,7 +38,7 @@ AR Path="/5FABC8C9" Ref="U?"  Part="1"
 AR Path="/5F9E7705/5FABC8C9" Ref="U3"  Part="1" 
 F 0 "U3" H 1750 3225 50  0000 C CNN
 F 1 "SN65220" H 1750 3134 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2100 2850 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 2100 2850 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn65220.pdf" H 1750 3150 50  0001 C CNN
 	1    1750 3000
 	1    0    0    -1  
@@ -73,62 +73,19 @@ Text GLabel 1150 3000 0    50   Input ~ 0
 USB_D+
 Text GLabel 2350 3000 2    50   Input ~ 0
 USB_D-
-Text GLabel 1300 3750 0    50   Input ~ 0
-USB_D+
-Text GLabel 2200 3750 2    50   Input ~ 0
-USB_D-
-$Comp
-L power:GND #PWR?
-U 1 1 5FABC8DF
-P 1750 3850
-AR Path="/5FABC8DF" Ref="#PWR?"  Part="1" 
-AR Path="/5F9E7705/5FABC8DF" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 1750 3600 50  0001 C CNN
-F 1 "GND" H 1755 3677 50  0000 C CNN
-F 2 "" H 1750 3850 50  0001 C CNN
-F 3 "" H 1750 3850 50  0001 C CNN
-	1    1750 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5FABC8E5
-P 1550 3750
-AR Path="/5FABC8E5" Ref="R?"  Part="1" 
-AR Path="/5F9E7705/5FABC8E5" Ref="R8"  Part="1" 
-F 0 "R8" V 1450 3750 50  0000 C CNN
-F 1 "15k" V 1650 3750 50  0000 C CNN
-F 2 "" H 1550 3750 50  0001 C CNN
-F 3 "~" H 1550 3750 50  0001 C CNN
-	1    1550 3750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5FABC8EB
-P 1950 3750
-AR Path="/5FABC8EB" Ref="R?"  Part="1" 
-AR Path="/5F9E7705/5FABC8EB" Ref="R9"  Part="1" 
-F 0 "R9" V 1850 3750 50  0000 C CNN
-F 1 "15k" V 2050 3750 50  0000 C CNN
-F 2 "" H 1950 3750 50  0001 C CNN
-F 3 "~" H 1950 3750 50  0001 C CNN
-	1    1950 3750
-	0    1    1    0   
-$EndComp
-Text Notes 850  4250 0    39   ~ 0
+Text Notes 800  3750 0    39   ~ 0
 * See Chapter 13.2 of SN65220 datasheet\n* See Table 3.5 of FT232R datasheet, series resistors are internal
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5FAF9339
-P 10900 1200
+P 10600 1200
 AR Path="/5FAF9339" Ref="J?"  Part="1" 
 AR Path="/5F9E7705/5FAF9339" Ref="J6"  Part="1" 
-F 0 "J6" H 10850 1300 50  0000 L CNN
-F 1 "XCVR_PTT" H 10750 1000 50  0000 L CNN
-F 2 "" H 10900 1200 50  0001 C CNN
-F 3 "~" H 10900 1200 50  0001 C CNN
-	1    10900 1200
+F 0 "J6" H 10700 1150 50  0000 L CNN
+F 1 "XCVR_PTT" H 10450 1350 50  0000 L CNN
+F 2 "custom:TB003-500-P02BE" H 10600 1200 50  0001 C CNN
+F 3 "~" H 10600 1200 50  0001 C CNN
+	1    10600 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -139,7 +96,7 @@ AR Path="/5FB0EB81" Ref="J?"  Part="1"
 AR Path="/5F9E7705/5FB0EB81" Ref="J4"  Part="1" 
 F 0 "J4" H 8150 1400 50  0000 L CNN
 F 1 "PTT choice" H 8000 1000 50  0000 L CNN
-F 2 "" H 8200 1200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8200 1200 50  0001 C CNN
 F 3 "~" H 8200 1200 50  0001 C CNN
 	1    8200 1200
 	1    0    0    -1  
@@ -160,27 +117,27 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FB18AF0
-P 9050 1350
+P 8750 1350
 AR Path="/5FB18AF0" Ref="#PWR?"  Part="1" 
 AR Path="/5F9E7705/5FB18AF0" Ref="#PWR025"  Part="1" 
-F 0 "#PWR025" H 9050 1100 50  0001 C CNN
-F 1 "GND" H 9050 1200 50  0000 C CNN
-F 2 "" H 9050 1350 50  0001 C CNN
-F 3 "" H 9050 1350 50  0001 C CNN
-	1    9050 1350
+F 0 "#PWR025" H 8750 1100 50  0001 C CNN
+F 1 "GND" H 8750 1200 50  0000 C CNN
+F 2 "" H 8750 1350 50  0001 C CNN
+F 3 "" H 8750 1350 50  0001 C CNN
+	1    8750 1350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5FB18AF8
-P 8950 1200
+P 8650 1200
 AR Path="/5FB18AF8" Ref="R?"  Part="1" 
 AR Path="/5F9E7705/5FB18AF8" Ref="R23"  Part="1" 
-F 0 "R23" V 8850 1200 50  0000 C CNN
-F 1 "1k" V 9050 1200 50  0000 C CNN
-F 2 "" H 8950 1200 50  0001 C CNN
-F 3 "~" H 8950 1200 50  0001 C CNN
-	1    8950 1200
+F 0 "R23" V 8550 1200 50  0000 C CNN
+F 1 "1k" V 8750 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8650 1200 50  0001 C CNN
+F 3 "~" H 8650 1200 50  0001 C CNN
+	1    8650 1200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -191,7 +148,7 @@ AR Path="/5FAEABDF" Ref="D?"  Part="1"
 AR Path="/5F9E7705/5FAEABDF" Ref="D3"  Part="1" 
 F 0 "D3" H 5950 3750 50  0000 C CNN
 F 1 "BR1101W-TR" H 5950 3500 50  0000 C CNN
-F 2 "" H 5950 3650 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5950 3650 50  0001 C CNN
 F 3 "~" H 5950 3650 50  0001 C CNN
 	1    5950 3650
 	1    0    0    -1  
@@ -204,7 +161,7 @@ AR Path="/5FAEABD9" Ref="R?"  Part="1"
 AR Path="/5F9E7705/5FAEABD9" Ref="R18"  Part="1" 
 F 0 "R18" V 6250 3650 50  0000 C CNN
 F 1 "560" V 6450 3650 50  0000 C CNN
-F 2 "" H 6350 3650 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6350 3650 50  0001 C CNN
 F 3 "~" H 6350 3650 50  0001 C CNN
 	1    6350 3650
 	0    1    1    0   
@@ -232,7 +189,7 @@ AR Path="/5FAEABCA" Ref="D?"  Part="1"
 AR Path="/5F9E7705/5FAEABCA" Ref="D4"  Part="1" 
 F 0 "D4" H 5950 4200 50  0000 C CNN
 F 1 "RAY1102W-745-TR" H 5850 3950 50  0000 C CNN
-F 2 "" H 5950 4100 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5950 4100 50  0001 C CNN
 F 3 "~" H 5950 4100 50  0001 C CNN
 	1    5950 4100
 	1    0    0    -1  
@@ -245,7 +202,7 @@ AR Path="/5FAEABC4" Ref="R?"  Part="1"
 AR Path="/5F9E7705/5FAEABC4" Ref="R19"  Part="1" 
 F 0 "R19" V 6250 4100 50  0000 C CNN
 F 1 "470" V 6450 4100 50  0000 C CNN
-F 2 "" H 6350 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6350 4100 50  0001 C CNN
 F 3 "~" H 6350 4100 50  0001 C CNN
 	1    6350 4100
 	0    1    1    0   
@@ -276,7 +233,7 @@ AR Path="/5F9D7A3C/5FD78EA5" Ref="C?"  Part="1"
 AR Path="/5F9E7705/5FD78EA5" Ref="C6"  Part="1" 
 F 0 "C6" H 1900 1650 50  0000 C CNN
 F 1 "10n" H 2100 1550 50  0000 C CNN
-F 2 "" H 2000 1600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2000 1600 50  0001 C CNN
 F 3 "~" H 2000 1600 50  0001 C CNN
 	1    2000 1600
 	1    0    0    -1  
@@ -318,7 +275,7 @@ AR Path="/5F9D7A3C/5FD78EC7" Ref="FB?"  Part="1"
 AR Path="/5F9E7705/5FD78EC7" Ref="FB2"  Part="1" 
 F 0 "FB2" V 2100 1450 50  0000 C CNN
 F 1 "Fe" V 2350 1450 50  0000 C CNN
-F 2 "" V 2180 1450 50  0001 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2180 1450 50  0001 C CNN
 F 3 "~" H 2250 1450 50  0001 C CNN
 	1    2250 1450
 	0    1    1    0   
@@ -372,7 +329,7 @@ AR Path="/5FADB63B" Ref="C?"  Part="1"
 AR Path="/5F9E7705/5FADB63B" Ref="C9"  Part="1" 
 F 0 "C9" V 3450 1950 50  0000 C CNN
 F 1 "100n" V 3650 1950 50  0000 C CNN
-F 2 "" H 3550 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3550 1950 50  0001 C CNN
 F 3 "~" H 3550 1950 50  0001 C CNN
 	1    3550 1950
 	0    1    1    0   
@@ -424,14 +381,14 @@ $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5FADB672
-P 4650 800
+P 4650 1100
 AR Path="/5FADB672" Ref="#PWR?"  Part="1" 
 AR Path="/5F9E7705/5FADB672" Ref="#PWR016"  Part="1" 
-F 0 "#PWR016" H 4650 650 50  0001 C CNN
-F 1 "VCC" H 4667 973 50  0000 C CNN
-F 2 "" H 4650 800 50  0001 C CNN
-F 3 "" H 4650 800 50  0001 C CNN
-	1    4650 800 
+F 0 "#PWR016" H 4650 950 50  0001 C CNN
+F 1 "VCC" H 4667 1273 50  0000 C CNN
+F 2 "" H 4650 1100 50  0001 C CNN
+F 3 "" H 4650 1100 50  0001 C CNN
+	1    4650 1100
 	1    0    0    -1  
 $EndComp
 Text GLabel 3750 2350 0    50   Input ~ 0
@@ -450,7 +407,7 @@ AR Path="/5FADB628" Ref="R?"  Part="1"
 AR Path="/5F9E7705/5FADB628" Ref="R17"  Part="1" 
 F 0 "R17" V 5550 3250 50  0000 C CNN
 F 1 "10k" V 5750 3250 50  0000 C CNN
-F 2 "" H 5650 3250 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5650 3250 50  0001 C CNN
 F 3 "~" H 5650 3250 50  0001 C CNN
 	1    5650 3250
 	0    1    1    0   
@@ -477,7 +434,7 @@ AR Path="/5F9D7A3C/5FB94B0A" Ref="C?"  Part="1"
 AR Path="/5F9E7705/5FB94B0A" Ref="C11"  Part="1" 
 F 0 "C11" V 5000 1500 50  0000 C CNN
 F 1 "100n" V 4800 1500 50  0000 C CNN
-F 2 "" H 4900 1500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4900 1500 50  0001 C CNN
 F 3 "~" H 4900 1500 50  0001 C CNN
 	1    4900 1500
 	0    -1   -1   0   
@@ -505,7 +462,7 @@ AR Path="/5F9D7A3C/5FB94AFE" Ref="C?"  Part="1"
 AR Path="/5F9E7705/5FB94AFE" Ref="C10"  Part="1" 
 F 0 "C10" V 4800 1200 50  0000 C CNN
 F 1 "4.7u" V 5000 1200 50  0000 C CNN
-F 2 "" H 4900 1200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4900 1200 50  0001 C CNN
 F 3 "~" H 4900 1200 50  0001 C CNN
 	1    4900 1200
 	0    1    1    0   
@@ -541,20 +498,9 @@ FTDI
 Entry Wire Line
 	6350 1000 6250 900 
 Wire Wire Line
-	1300 3750 1450 3750
+	8900 1300 8750 1300
 Wire Wire Line
-	1650 3750 1750 3750
-Wire Wire Line
-	2050 3750 2200 3750
-Wire Wire Line
-	1750 3850 1750 3750
-Connection ~ 1750 3750
-Wire Wire Line
-	1750 3750 1850 3750
-Wire Wire Line
-	9200 1300 9050 1300
-Wire Wire Line
-	9050 1300 9050 1350
+	8750 1300 8750 1350
 Wire Wire Line
 	6450 3650 6600 3650
 Wire Wire Line
@@ -651,7 +597,7 @@ AR Path="/5FB135D4" Ref="J?"  Part="1"
 AR Path="/5F9E7705/5FB135D4" Ref="J3"  Part="1" 
 F 0 "J3" H 5850 1300 50  0000 L CNN
 F 1 "FTDI header" H 5700 600 50  0000 L CNN
-F 2 "" H 5900 1000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5900 1000 50  0001 C CNN
 F 3 "~" H 5900 1000 50  0001 C CNN
 	1    5900 1000
 	-1   0    0    -1  
@@ -690,7 +636,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 800  5500 800 
 Text GLabel 7600 1450 0    50   Input ~ 0
-UART_BUS
+UART
 Wire Bus Line
 	7600 1450 7700 1450
 Entry Wire Line
@@ -706,27 +652,21 @@ RTS
 Text Label 7800 1300 0    50   ~ 0
 DTR
 Wire Wire Line
-	10100 1200 10200 1200
+	9800 1200 9900 1200
 Wire Wire Line
-	10100 1400 10200 1400
+	9800 1400 9900 1400
 Wire Wire Line
-	10200 1400 10200 1200
-Connection ~ 10200 1200
+	9900 1400 9900 1200
+Connection ~ 9900 1200
 Wire Wire Line
-	10200 1200 10700 1200
-Wire Wire Line
-	10100 1300 10700 1300
-Text Label 10250 1200 0    50   ~ 0
-XCVR_PTT+
-Text Label 10250 1300 0    50   ~ 0
-XCVR_PTT-
+	9900 1200 9950 1200
 Text Notes 7150 750  0    157  ~ 31
 PTT + isolation
 Wire Notes Line
 	7000 2000 11200 2000
 Text Notes 8050 1500 0    39   Italic 0
 Use jumper
-Text Notes 10700 1500 0    39   Italic 0
+Text Notes 10400 1000 0    39   Italic 0
 Screw terminal
 Wire Wire Line
 	2000 1450 2150 1450
@@ -740,9 +680,9 @@ P 2550 1600
 AR Path="/5FFE7E60" Ref="R?"  Part="1" 
 AR Path="/5F9D7A3C/5FFE7E60" Ref="R?"  Part="1" 
 AR Path="/5F9E7705/5FFE7E60" Ref="R10"  Part="1" 
-F 0 "R10" H 2450 1650 50  0000 C CNN
+F 0 "R10" H 2450 1600 50  0000 C CNN
 F 1 "470" H 2650 1600 50  0000 C CNN
-F 2 "" H 2550 1600 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2550 1600 50  0001 C CNN
 F 3 "~" H 2550 1600 50  0001 C CNN
 	1    2550 1600
 	1    0    0    -1  
@@ -756,7 +696,7 @@ AR Path="/5F9D7A3C/5FFE90D2" Ref="D?"  Part="1"
 AR Path="/5F9E7705/5FFE90D2" Ref="D2"  Part="1" 
 F 0 "D2" V 2550 2000 50  0000 C CNN
 F 1 "BG1102W-TR" H 2450 1750 50  0000 C CNN
-F 2 "" H 2550 1900 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2550 1900 50  0001 C CNN
 F 3 "~" H 2550 1900 50  0001 C CNN
 	1    2550 1900
 	0    -1   -1   0   
@@ -804,7 +744,7 @@ AR Path="/60386F7D" Ref="C?"  Part="1"
 AR Path="/5F9E7705/60386F7D" Ref="C8"  Part="1" 
 F 0 "C8" V 2950 5600 50  0000 C CNN
 F 1 "100n" V 2750 5600 50  0000 C CNN
-F 2 "" H 2850 5600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2850 5600 50  0001 C CNN
 F 3 "~" H 2850 5600 50  0001 C CNN
 	1    2850 5600
 	0    -1   -1   0   
@@ -817,7 +757,7 @@ U 1 1 60364EF5
 P 1850 6100
 F 0 "U4" H 2450 6450 50  0000 C CNN
 F 1 "Si8663AB-B-IS1" H 2450 5700 50  0000 C CNN
-F 2 "SOIC127P600X175-16N" H 3850 6200 50  0001 L CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3850 6200 50  0001 L CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/Si86xx.pdf" H 3850 6100 50  0001 L CNN
 F 4 "Isolator, Si8663AB-B-IS1 Silicon Labs Si8663AB-B-IS1 PCB SMT 6-channel Digital Isolator, 2500 Vrms, 16-Pin SOIC" H 3850 6000 50  0001 L CNN "Description"
 F 5 "1.75" H 3850 5900 50  0001 L CNN "Height"
@@ -849,7 +789,7 @@ AR Path="/60404792" Ref="C?"  Part="1"
 AR Path="/5F9E7705/60404792" Ref="C7"  Part="1" 
 F 0 "C7" V 2150 5600 50  0000 C CNN
 F 1 "100n" V 1950 5600 50  0000 C CNN
-F 2 "" H 2050 5600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2050 5600 50  0001 C CNN
 F 3 "~" H 2050 5600 50  0001 C CNN
 	1    2050 5600
 	0    -1   -1   0   
@@ -912,7 +852,7 @@ U 1 1 604CF3B9
 P 1500 6200
 F 0 "R2" V 1450 6050 50  0000 C CNN
 F 1 "270" V 1450 6350 50  0000 C CNN
-F 2 "" H 1500 6200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1500 6200 50  0001 C CNN
 F 3 "~" H 1500 6200 50  0001 C CNN
 	1    1500 6200
 	0    1    1    0   
@@ -923,7 +863,7 @@ U 1 1 604DA10D
 P 1500 6300
 F 0 "R3" V 1450 6150 50  0000 C CNN
 F 1 "270" V 1450 6450 50  0000 C CNN
-F 2 "" H 1500 6300 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1500 6300 50  0001 C CNN
 F 3 "~" H 1500 6300 50  0001 C CNN
 	1    1500 6300
 	0    1    1    0   
@@ -934,7 +874,7 @@ U 1 1 604DA903
 P 1500 6400
 F 0 "R4" V 1450 6250 50  0000 C CNN
 F 1 "270" V 1450 6550 50  0000 C CNN
-F 2 "" H 1500 6400 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1500 6400 50  0001 C CNN
 F 3 "~" H 1500 6400 50  0001 C CNN
 	1    1500 6400
 	0    1    1    0   
@@ -945,7 +885,7 @@ U 1 1 604DC52A
 P 1500 6600
 F 0 "R5" V 1450 6450 50  0000 C CNN
 F 1 "270" V 1450 6750 50  0000 C CNN
-F 2 "" H 1500 6600 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1500 6600 50  0001 C CNN
 F 3 "~" H 1500 6600 50  0001 C CNN
 	1    1500 6600
 	0    1    1    0   
@@ -956,7 +896,7 @@ U 1 1 604DC530
 P 1500 6700
 F 0 "R6" V 1450 6550 50  0000 C CNN
 F 1 "270" V 1450 6850 50  0000 C CNN
-F 2 "" H 1500 6700 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1500 6700 50  0001 C CNN
 F 3 "~" H 1500 6700 50  0001 C CNN
 	1    1500 6700
 	0    1    1    0   
@@ -967,7 +907,7 @@ U 1 1 604DC536
 P 1500 6800
 F 0 "R7" V 1450 6650 50  0000 C CNN
 F 1 "270" V 1450 6950 50  0000 C CNN
-F 2 "" H 1500 6800 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1500 6800 50  0001 C CNN
 F 3 "~" H 1500 6800 50  0001 C CNN
 	1    1500 6800
 	0    1    1    0   
@@ -988,7 +928,7 @@ U 1 1 60517D42
 P 3350 6200
 F 0 "R11" V 3300 6050 50  0000 C CNN
 F 1 "270" V 3300 6350 50  0000 C CNN
-F 2 "" H 3350 6200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3350 6200 50  0001 C CNN
 F 3 "~" H 3350 6200 50  0001 C CNN
 	1    3350 6200
 	0    1    1    0   
@@ -999,7 +939,7 @@ U 1 1 60517D48
 P 3350 6300
 F 0 "R12" V 3300 6150 50  0000 C CNN
 F 1 "270" V 3300 6450 50  0000 C CNN
-F 2 "" H 3350 6300 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3350 6300 50  0001 C CNN
 F 3 "~" H 3350 6300 50  0001 C CNN
 	1    3350 6300
 	0    1    1    0   
@@ -1010,7 +950,7 @@ U 1 1 60517D4E
 P 3350 6400
 F 0 "R13" V 3300 6250 50  0000 C CNN
 F 1 "270" V 3300 6550 50  0000 C CNN
-F 2 "" H 3350 6400 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3350 6400 50  0001 C CNN
 F 3 "~" H 3350 6400 50  0001 C CNN
 	1    3350 6400
 	0    1    1    0   
@@ -1021,7 +961,7 @@ U 1 1 60517D54
 P 3350 6600
 F 0 "R14" V 3300 6450 50  0000 C CNN
 F 1 "270" V 3300 6750 50  0000 C CNN
-F 2 "" H 3350 6600 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3350 6600 50  0001 C CNN
 F 3 "~" H 3350 6600 50  0001 C CNN
 	1    3350 6600
 	0    1    1    0   
@@ -1032,7 +972,7 @@ U 1 1 60517D5A
 P 3350 6700
 F 0 "R15" V 3300 6550 50  0000 C CNN
 F 1 "270" V 3300 6850 50  0000 C CNN
-F 2 "" H 3350 6700 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3350 6700 50  0001 C CNN
 F 3 "~" H 3350 6700 50  0001 C CNN
 	1    3350 6700
 	0    1    1    0   
@@ -1043,7 +983,7 @@ U 1 1 60517D60
 P 3350 6800
 F 0 "R16" V 3300 6650 50  0000 C CNN
 F 1 "270" V 3300 6950 50  0000 C CNN
-F 2 "" H 3350 6800 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3350 6800 50  0001 C CNN
 F 3 "~" H 3350 6800 50  0001 C CNN
 	1    3350 6800
 	0    1    1    0   
@@ -1098,10 +1038,6 @@ Text Label 3750 6300 0    50   ~ 0
 XCVR_CTS
 Text Label 3750 6400 0    50   ~ 0
 XCVR_DSR
-Text Label 5850 5600 0    50   ~ 0
-XCVR_RTS_DRV
-Text Label 5850 5850 0    50   ~ 0
-XCVR_DTR_DRV
 Text Label 1050 6600 0    50   ~ 0
 RXD
 Text Label 1050 6700 0    50   ~ 0
@@ -1113,42 +1049,26 @@ Wire Notes Line
 Text Notes 2450 5350 1    50   ~ 0
 Isolation
 Wire Notes Line
-	9650 750  9650 1900
-Text Notes 9650 1900 1    50   ~ 0
+	9350 750  9350 1900
+Text Notes 9350 1900 1    50   ~ 0
 Isolation
 $Comp
 L custom:VOR1121B6T U7
 U 1 1 5F9F5535
-P 9200 1200
-F 0 "U7" H 9650 1465 50  0000 C CNN
-F 1 "VOR1121B6T" H 9650 1374 50  0000 C CNN
-F 2 "SOT254P980X380-6N" H 10550 1300 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/VOR1121B6T.pdf" H 10550 1200 50  0001 L CNN
-F 4 "Solid State Relays - PCB Mount Hi-Reliability SSR 5300 Vrms 370mA S Ch" H 10550 1100 50  0001 L CNN "Description"
-F 5 "3.8" H 10550 1000 50  0001 L CNN "Height"
-F 6 "78-VOR1121B6T" H 10550 900 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/VOR1121B6T?qs=Vcr9%2FL0R50ifRPsBWuXdog%3D%3D" H 10550 800 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 10550 700 50  0001 L CNN "Manufacturer_Name"
-F 9 "VOR1121B6T" H 10550 600 50  0001 L CNN "Manufacturer_Part_Number"
-	1    9200 1200
+P 8900 1200
+F 0 "U7" H 9350 1465 50  0000 C CNN
+F 1 "VOR1121B6T" H 9350 1374 50  0000 C CNN
+F 2 "Package_DIP:SMDIP-6_W9.53mm_Clearance8mm" H 10250 1300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/VOR1121B6T.pdf" H 10250 1200 50  0001 L CNN
+F 4 "Solid State Relays - PCB Mount Hi-Reliability SSR 5300 Vrms 370mA S Ch" H 10250 1100 50  0001 L CNN "Description"
+F 5 "3.8" H 10250 1000 50  0001 L CNN "Height"
+F 6 "78-VOR1121B6T" H 10250 900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/VOR1121B6T?qs=Vcr9%2FL0R50ifRPsBWuXdog%3D%3D" H 10250 800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 10250 700 50  0001 L CNN "Manufacturer_Name"
+F 9 "VOR1121B6T" H 10250 600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8900 1200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB?
-U 1 1 5FB1F439
-P 4650 1000
-AR Path="/5FB1F439" Ref="FB?"  Part="1" 
-AR Path="/5F9D7A3C/5FB1F439" Ref="FB?"  Part="1" 
-AR Path="/5F9E7705/5FB1F439" Ref="FB4"  Part="1" 
-F 0 "FB4" H 4550 950 50  0000 C CNN
-F 1 "Fe" H 4750 1050 50  0000 C CNN
-F 2 "" V 4580 1000 50  0001 C CNN
-F 3 "~" H 4650 1000 50  0001 C CNN
-	1    4650 1000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4650 800  4650 900 
 Wire Wire Line
 	4650 1100 4650 1200
 Connection ~ 4650 1200
@@ -1161,7 +1081,7 @@ AR Path="/5F9D7A3C/5FB69FF0" Ref="FB?"  Part="1"
 AR Path="/5F9E7705/5FB69FF0" Ref="FB1"  Part="1" 
 F 0 "FB1" V 2150 5250 50  0000 C CNN
 F 1 "Fe" V 1950 5200 50  0000 C CNN
-F 2 "" V 1980 5250 50  0001 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1980 5250 50  0001 C CNN
 F 3 "~" H 2050 5250 50  0001 C CNN
 	1    2050 5250
 	0    -1   -1   0   
@@ -1183,7 +1103,7 @@ AR Path="/5F9D7A3C/5FB84F16" Ref="FB?"  Part="1"
 AR Path="/5F9E7705/5FB84F16" Ref="FB3"  Part="1" 
 F 0 "FB3" V 2950 5250 50  0000 C CNN
 F 1 "Fe" V 2750 5200 50  0000 C CNN
-F 2 "" V 2780 5250 50  0001 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2780 5250 50  0001 C CNN
 F 3 "~" H 2850 5250 50  0001 C CNN
 	1    2850 5250
 	0    -1   -1   0   
@@ -1200,17 +1120,15 @@ $Comp
 L Device:D_Schottky_Small D5
 U 1 1 5FD7AEFF
 P 10100 2900
-F 0 "D5" V 10150 3000 50  0000 C CNN
-F 1 "TBD" V 10050 3000 50  0000 C CNN
-F 2 "" V 10100 2900 50  0001 C CNN
+F 0 "D5" V 10100 3000 50  0000 C CNN
+F 1 "1N4148X-TP" V 10100 2600 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" V 10100 2900 50  0001 C CNN
 F 3 "~" V 10100 2900 50  0001 C CNN
 	1    10100 2900
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	9050 1200 9200 1200
-Wire Wire Line
-	8850 1200 8750 1200
+	8750 1200 8900 1200
 Wire Wire Line
 	5350 1950 5700 1950
 Wire Wire Line
@@ -1229,7 +1147,7 @@ U 1 1 5FF595C7
 P 5850 1950
 F 0 "JP1" H 6050 2000 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 5850 2064 50  0001 C CNN
-F 2 "" H 5850 1950 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5850 1950 50  0001 C CNN
 F 3 "~" H 5850 1950 50  0001 C CNN
 	1    5850 1950
 	1    0    0    -1  
@@ -1242,7 +1160,7 @@ U 1 1 5FF60B60
 P 5850 2050
 F 0 "JP2" H 6050 2100 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 5850 2164 50  0001 C CNN
-F 2 "" H 5850 2050 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5850 2050 50  0001 C CNN
 F 3 "~" H 5850 2050 50  0001 C CNN
 	1    5850 2050
 	1    0    0    -1  
@@ -1255,7 +1173,7 @@ U 1 1 5FF61A0D
 P 5850 2150
 F 0 "JP3" H 6050 2200 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 5850 2264 50  0001 C CNN
-F 2 "" H 5850 2150 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5850 2150 50  0001 C CNN
 F 3 "~" H 5850 2150 50  0001 C CNN
 	1    5850 2150
 	1    0    0    -1  
@@ -1268,7 +1186,7 @@ U 1 1 5FF61C58
 P 5850 2250
 F 0 "JP4" H 6050 2300 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 5850 2364 50  0001 C CNN
-F 2 "" H 5850 2250 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5850 2250 50  0001 C CNN
 F 3 "~" H 5850 2250 50  0001 C CNN
 	1    5850 2250
 	1    0    0    -1  
@@ -1281,7 +1199,7 @@ U 1 1 5FF620CE
 P 5850 2350
 F 0 "JP5" H 6050 2400 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 5850 2464 50  0001 C CNN
-F 2 "" H 5850 2350 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5850 2350 50  0001 C CNN
 F 3 "~" H 5850 2350 50  0001 C CNN
 	1    5850 2350
 	1    0    0    -1  
@@ -1294,26 +1212,13 @@ U 1 1 5FF6249B
 P 5850 2450
 F 0 "JP6" H 6050 2500 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 5850 2564 50  0001 C CNN
-F 2 "" H 5850 2450 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5850 2450 50  0001 C CNN
 F 3 "~" H 5850 2450 50  0001 C CNN
 	1    5850 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6000 2450 6250 2450
-$Comp
-L Jumper:SolderJumper_2_Bridged JP7
-U 1 1 5FF62C4C
-P 8600 1200
-F 0 "JP7" H 8600 1300 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 8600 1314 50  0001 C CNN
-F 2 "" H 8600 1200 50  0001 C CNN
-F 3 "~" H 8600 1200 50  0001 C CNN
-	1    8600 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8450 1200 8000 1200
 Text GLabel 10100 3950 3    50   Input ~ 0
 XCVR_GND
 Text Notes 9300 3950 0    39   Italic 0
@@ -1326,7 +1231,7 @@ AR Path="/5FAF9355" Ref="J?"  Part="1"
 AR Path="/5F9E7705/5FAF9355" Ref="J5"  Part="1" 
 F 0 "J5" H 9500 3750 50  0000 L CNN
 F 1 "XCVR_CAT_TTL" H 9250 2850 50  0000 L CNN
-F 2 "" H 9550 3350 50  0001 C CNN
+F 2 "custom:TB003-500-P08BE" H 9550 3350 50  0001 C CNN
 F 3 "~" H 9550 3350 50  0001 C CNN
 	1    9550 3350
 	1    0    0    -1  
@@ -1341,7 +1246,7 @@ AR Path="/5F9E817D/5FC0BECA" Ref="C?"  Part="1"
 AR Path="/5F9E7705/5FC0BECA" Ref="C13"  Part="1" 
 F 0 "C13" H 9842 3246 50  0000 L CNN
 F 1 "100n" H 9842 3155 50  0000 L CNN
-F 2 "" H 9750 3200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9750 3200 50  0001 C CNN
 F 3 "~" H 9750 3200 50  0001 C CNN
 	1    9750 3200
 	1    0    0    -1  
@@ -1358,7 +1263,7 @@ AR Path="/5F9D7A3C/5FD7AF08" Ref="R?"  Part="1"
 AR Path="/5F9E7705/5FD7AF08" Ref="R24"  Part="1" 
 F 0 "R24" H 10250 3250 50  0000 C CNN
 F 1 "2.2k" H 10250 3150 50  0000 C CNN
-F 2 "" H 10100 3200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10100 3200 50  0001 C CNN
 F 3 "~" H 10100 3200 50  0001 C CNN
 	1    10100 3200
 	1    0    0    -1  
@@ -1372,7 +1277,7 @@ AR Path="/5F9D7A3C/5FD7AF0E" Ref="D?"  Part="1"
 AR Path="/5F9E7705/5FD7AF0E" Ref="D6"  Part="1" 
 F 0 "D6" V 10100 3600 50  0000 C CNN
 F 1 "BG1102W-TR" H 10000 3350 50  0000 C CNN
-F 2 "" H 10100 3500 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10100 3500 50  0001 C CNN
 F 3 "~" H 10100 3500 50  0001 C CNN
 	1    10100 3500
 	0    -1   -1   0   
@@ -1409,13 +1314,11 @@ U 1 1 5FB7A5F9
 P 5350 5400
 F 0 "U6" H 5100 5850 50  0000 C CNN
 F 1 "SN74HCT32D" H 5000 4400 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7525 5875 50  0001 C CNN
+F 2 "custom:SOIC-14_P1.27mm_Handsolder" H 7525 5875 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/sn74hct32.pdf?HQS=TI-null-null-mousermode-df-pf-null-wwe&ts=1604238425444&ref_url=https%253A%252F%252Fwww.mouser.ie%252F" H 5275 6575 50  0001 C CNN
 	1    5350 5400
 	-1   0    0    -1  
 $EndComp
-Text Label 5850 5350 0    50   ~ 0
-XCVR_TXD_DRV
 Text GLabel 5000 4750 0    50   Input ~ 0
 XCVR_5V
 Wire Bus Line
@@ -1433,7 +1336,7 @@ AR Path="/5F9D7A3C/601885A8" Ref="FB?"  Part="1"
 AR Path="/5F9E7705/601885A8" Ref="FB5"  Part="1" 
 F 0 "FB5" V 5100 4750 50  0000 C CNN
 F 1 "Fe" V 5300 4800 50  0000 C CNN
-F 2 "" V 5130 4750 50  0001 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5130 4750 50  0001 C CNN
 F 3 "~" H 5200 4750 50  0001 C CNN
 	1    5200 4750
 	0    -1   1    0   
@@ -1446,7 +1349,7 @@ AR Path="/601AB947" Ref="C?"  Part="1"
 AR Path="/5F9E7705/601AB947" Ref="C12"  Part="1" 
 F 0 "C12" V 5600 4750 50  0000 C CNN
 F 1 "100n" V 5400 4750 50  0000 C CNN
-F 2 "" H 5500 4750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5500 4750 50  0001 C CNN
 F 3 "~" H 5500 4750 50  0001 C CNN
 	1    5500 4750
 	0    1    -1   0   
@@ -1476,12 +1379,6 @@ Text Label 3750 6700 0    50   ~ 0
 XCVR_RTS
 Text Label 3750 6800 0    50   ~ 0
 XCVR_DTR
-Wire Wire Line
-	5750 5350 6800 5350
-Wire Wire Line
-	5750 5600 6800 5600
-Wire Wire Line
-	5750 5850 6800 5850
 Text GLabel 8350 3050 0    50   Input ~ 0
 XCVR_UART_RX
 Wire Bus Line
@@ -1526,22 +1423,12 @@ Wire Notes Line
 	7000 4500 7000 500 
 Wire Wire Line
 	10100 3050 10100 3000
-Text GLabel 7000 6050 2    50   Input ~ 0
-XCVR_UART_TX_DRV
-Entry Wire Line
-	6900 5950 6800 5850
 Entry Wire Line
 	8600 5250 8700 5150
 Entry Wire Line
-	6800 5600 6900 5700
-Entry Wire Line
 	8600 5500 8700 5400
 Entry Wire Line
-	6800 5350 6900 5450
-Entry Wire Line
 	8600 5750 8700 5650
-Wire Bus Line
-	6900 6050 7000 6050
 $Comp
 L Device:R_Small R?
 U 1 1 608CB9A1
@@ -1550,7 +1437,7 @@ AR Path="/5F9E7705/606D9B1D/608CB9A1" Ref="R?"  Part="1"
 AR Path="/5F9E7705/608CB9A1" Ref="R20"  Part="1" 
 F 0 "R20" H 6800 5100 50  0000 L CNN
 F 1 "1k" H 6800 5000 50  0000 L CNN
-F 2 "" H 7000 5050 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7000 5050 50  0001 C CNN
 F 3 "~" H 7000 5050 50  0001 C CNN
 	1    7000 5050
 	1    0    0    -1  
@@ -1563,7 +1450,7 @@ AR Path="/5F9E7705/606D9B1D/608D4282" Ref="R?"  Part="1"
 AR Path="/5F9E7705/608D4282" Ref="R21"  Part="1" 
 F 0 "R21" H 7250 5100 50  0000 L CNN
 F 1 "1k" H 7250 5000 50  0000 L CNN
-F 2 "" H 7450 5050 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7450 5050 50  0001 C CNN
 F 3 "~" H 7450 5050 50  0001 C CNN
 	1    7450 5050
 	1    0    0    -1  
@@ -1576,7 +1463,7 @@ AR Path="/5F9E7705/606D9B1D/608D471E" Ref="R?"  Part="1"
 AR Path="/5F9E7705/608D471E" Ref="R22"  Part="1" 
 F 0 "R22" H 7700 5100 50  0000 L CNN
 F 1 "1k" H 7700 5000 50  0000 L CNN
-F 2 "" H 7900 5050 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7900 5050 50  0001 C CNN
 F 3 "~" H 7900 5050 50  0001 C CNN
 	1    7900 5050
 	1    0    0    -1  
@@ -1647,7 +1534,7 @@ U 1 1 5F9FA669
 P 950 1650
 F 0 "J2" H 950 2100 50  0000 C CNN
 F 1 "USB_B" H 950 2000 50  0000 C CNN
-F 2 "" H 1100 1600 50  0001 C CNN
+F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 1100 1600 50  0001 C CNN
 F 3 " ~" H 1100 1600 50  0001 C CNN
 	1    950  1650
 	1    0    0    -1  
@@ -1659,16 +1546,63 @@ Wire Wire Line
 Wire Wire Line
 	1250 1450 2000 1450
 NoConn ~ 850  2050
-Wire Bus Line
-	7700 1200 7700 1450
+Text GLabel 10350 1400 3    50   Input ~ 0
+XCVR_PTT-
+Wire Wire Line
+	10350 1400 10350 1300
+Connection ~ 10350 1300
+Wire Wire Line
+	10350 1300 10400 1300
+Wire Wire Line
+	9800 1300 9950 1300
+$Comp
+L Jumper:SolderJumper_2_Bridged JP16
+U 1 1 5FB3CD14
+P 10100 1200
+F 0 "JP16" H 10100 1300 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 10100 1314 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 10100 1200 50  0001 C CNN
+F 3 "~" H 10100 1200 50  0001 C CNN
+	1    10100 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 1200 10400 1200
+$Comp
+L Jumper:SolderJumper_2_Bridged JP17
+U 1 1 5FB3D72D
+P 10100 1300
+F 0 "JP17" H 10100 1200 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 10100 1414 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 10100 1300 50  0001 C CNN
+F 3 "~" H 10100 1300 50  0001 C CNN
+	1    10100 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 1300 10350 1300
+Wire Wire Line
+	8000 1200 8550 1200
+Text GLabel 5850 5350 2    50   Input ~ 0
+XCVR_TXD_DRV
+Text GLabel 5850 5600 2    50   Input ~ 0
+XCVR_RTS_DRV
+Text GLabel 5850 5850 2    50   Input ~ 0
+XCVR_DTR_DRV
+Wire Wire Line
+	5850 5350 5750 5350
+Wire Wire Line
+	5750 5600 5850 5600
+Wire Wire Line
+	5750 5850 5850 5850
 Wire Wire Line
 	8600 3550 9350 3550
+Wire Bus Line
+	7700 1200 7700 1450
 Wire Bus Line
 	4300 5800 4300 6300
 Wire Bus Line
 	8500 3050 8500 3650
-Wire Bus Line
-	6900 5450 6900 6050
 Wire Bus Line
 	950  6000 950  6700
 Wire Bus Line
