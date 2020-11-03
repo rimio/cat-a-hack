@@ -1,4 +1,4 @@
-update=11/2/2020 2:17:03 PM
+update=11/3/2020 10:05:07 PM
 version=1
 last_client=kicad
 [general]
@@ -45,9 +45,16 @@ TrackWidth4=0.75
 TrackWidth5=1
 ViaDiameter1=0.8
 ViaDrill1=0.4
+ViaDiameter2=1.2
+ViaDrill2=0.6
+ViaDiameter3=1.6
+ViaDrill3=0.8
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
+dPairWidth2=0.261112
+dPairGap2=0.2032
+dPairViaGap2=0.2032
 SilkLineWidth=0.12
 SilkTextSizeV=1
 SilkTextSizeH=1

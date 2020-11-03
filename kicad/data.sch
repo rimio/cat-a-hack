@@ -481,17 +481,17 @@ Entry Wire Line
 	6250 2350 6350 2450
 Entry Wire Line
 	6250 2450 6350 2550
-Text Label 5350 1950 0    50   ~ 0
+Text Label 5950 1950 0    50   ~ 0
 TXD
-Text Label 5350 2050 0    50   ~ 0
+Text Label 5950 2050 0    50   ~ 0
 RXD
-Text Label 5350 2150 0    50   ~ 0
+Text Label 5950 2150 0    50   ~ 0
 RTS
-Text Label 5350 2250 0    50   ~ 0
+Text Label 5950 2250 0    50   ~ 0
 CTS
-Text Label 5350 2350 0    50   ~ 0
+Text Label 5950 2350 0    50   ~ 0
 DTR
-Text Label 5350 2450 0    50   ~ 0
+Text Label 5950 2450 0    50   ~ 0
 DSR
 Text Notes 3150 750  0    157  ~ 31
 FTDI
@@ -730,8 +730,6 @@ Text Notes 550  4750 0    157  ~ 31
 UART isolation + crossover
 Text GLabel 850  6000 0    50   Input ~ 0
 UART
-Text GLabel 4150 5800 0    50   Input ~ 0
-XCVR_UART_RX
 Wire Bus Line
 	850  6000 950  6000
 Text GLabel 3050 5250 2    50   Input ~ 0
@@ -1002,8 +1000,6 @@ Wire Wire Line
 	3050 6800 3250 6800
 Wire Wire Line
 	1600 6400 1850 6400
-Text Label 1050 6200 0    50   ~ 0
-TXD
 Wire Wire Line
 	1050 6200 1400 6200
 Wire Wire Line
@@ -1016,28 +1012,6 @@ Wire Wire Line
 	1050 6700 1400 6700
 Wire Wire Line
 	1050 6800 1400 6800
-Text Label 1050 6300 0    50   ~ 0
-RTS
-Text Label 1050 6400 0    50   ~ 0
-DTR
-Entry Wire Line
-	4300 6100 4200 6200
-Wire Wire Line
-	3450 6200 4200 6200
-Entry Wire Line
-	4300 6200 4200 6300
-Entry Wire Line
-	4300 6300 4200 6400
-Wire Wire Line
-	3450 6300 4200 6300
-Wire Wire Line
-	3450 6400 4200 6400
-Text Label 3750 6200 0    50   ~ 0
-XCVR_RXD
-Text Label 3750 6300 0    50   ~ 0
-XCVR_CTS
-Text Label 3750 6400 0    50   ~ 0
-XCVR_DSR
 Text Label 1050 6600 0    50   ~ 0
 RXD
 Text Label 1050 6700 0    50   ~ 0
@@ -1130,95 +1104,70 @@ $EndComp
 Wire Wire Line
 	8750 1200 8900 1200
 Wire Wire Line
-	5350 1950 5700 1950
+	5350 2150 5500 2150
 Wire Wire Line
-	5350 2150 5700 2150
+	5350 2250 5500 2250
 Wire Wire Line
-	5350 2250 5700 2250
+	5350 2350 5500 2350
 Wire Wire Line
-	5350 2350 5700 2350
+	5350 2450 5500 2450
 Wire Wire Line
-	5350 2450 5700 2450
-Wire Wire Line
-	6000 1950 6250 1950
-$Comp
-L Jumper:SolderJumper_2_Bridged JP1
-U 1 1 5FF595C7
-P 5850 1950
-F 0 "JP1" H 6050 2000 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5850 2064 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5850 1950 50  0001 C CNN
-F 3 "~" H 5850 1950 50  0001 C CNN
-	1    5850 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 2050 5700 2050
+	5350 2050 5500 2050
 $Comp
 L Jumper:SolderJumper_2_Bridged JP2
 U 1 1 5FF60B60
-P 5850 2050
-F 0 "JP2" H 6050 2100 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5850 2164 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5850 2050 50  0001 C CNN
-F 3 "~" H 5850 2050 50  0001 C CNN
-	1    5850 2050
+P 5650 2050
+F 0 "JP2" H 5450 2100 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 5650 2164 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5650 2050 50  0001 C CNN
+F 3 "~" H 5650 2050 50  0001 C CNN
+	1    5650 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 2050 6250 2050
 $Comp
 L Jumper:SolderJumper_2_Bridged JP3
 U 1 1 5FF61A0D
-P 5850 2150
-F 0 "JP3" H 6050 2200 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5850 2264 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5850 2150 50  0001 C CNN
-F 3 "~" H 5850 2150 50  0001 C CNN
-	1    5850 2150
+P 5650 2150
+F 0 "JP3" H 5450 2200 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 5650 2264 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5650 2150 50  0001 C CNN
+F 3 "~" H 5650 2150 50  0001 C CNN
+	1    5650 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 2150 6250 2150
 $Comp
 L Jumper:SolderJumper_2_Bridged JP4
 U 1 1 5FF61C58
-P 5850 2250
-F 0 "JP4" H 6050 2300 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5850 2364 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5850 2250 50  0001 C CNN
-F 3 "~" H 5850 2250 50  0001 C CNN
-	1    5850 2250
+P 5650 2250
+F 0 "JP4" H 5450 2300 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 5650 2364 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5650 2250 50  0001 C CNN
+F 3 "~" H 5650 2250 50  0001 C CNN
+	1    5650 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 2250 6250 2250
 $Comp
 L Jumper:SolderJumper_2_Bridged JP5
 U 1 1 5FF620CE
-P 5850 2350
-F 0 "JP5" H 6050 2400 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5850 2464 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5850 2350 50  0001 C CNN
-F 3 "~" H 5850 2350 50  0001 C CNN
-	1    5850 2350
+P 5650 2350
+F 0 "JP5" H 5450 2400 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 5650 2464 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5650 2350 50  0001 C CNN
+F 3 "~" H 5650 2350 50  0001 C CNN
+	1    5650 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 2350 6250 2350
 $Comp
 L Jumper:SolderJumper_2_Bridged JP6
 U 1 1 5FF6249B
-P 5850 2450
-F 0 "JP6" H 6050 2500 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5850 2564 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5850 2450 50  0001 C CNN
-F 3 "~" H 5850 2450 50  0001 C CNN
-	1    5850 2450
+P 5650 2450
+F 0 "JP6" H 5450 2500 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 5650 2564 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5650 2450 50  0001 C CNN
+F 3 "~" H 5650 2450 50  0001 C CNN
+	1    5650 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 2450 6250 2450
 Text GLabel 10100 3950 3    50   Input ~ 0
 XCVR_GND
 Text Notes 9300 3950 0    39   Italic 0
@@ -1321,8 +1270,6 @@ F 3 "https://www.ti.com/lit/ds/symlink/sn74hct32.pdf?HQS=TI-null-null-mousermode
 $EndComp
 Text GLabel 5000 4750 0    50   Input ~ 0
 XCVR_5V
-Wire Bus Line
-	4150 5800 4300 5800
 Connection ~ 10100 3050
 NoConn ~ 4950 6050
 NoConn ~ 5750 6000
@@ -1373,46 +1320,26 @@ Text Label 5850 5500 0    50   ~ 0
 XCVR_RTS_CON
 Text Label 5850 5750 0    50   ~ 0
 XCVR_DTR_CON
-Text Label 3750 6600 0    50   ~ 0
+Text Label 3650 6600 0    50   ~ 0
 XCVR_TXD
-Text Label 3750 6700 0    50   ~ 0
+Text Label 3650 6700 0    50   ~ 0
 XCVR_RTS
-Text Label 3750 6800 0    50   ~ 0
+Text Label 3650 6800 0    50   ~ 0
 XCVR_DTR
-Text GLabel 8350 3050 0    50   Input ~ 0
-XCVR_UART_RX
-Wire Bus Line
-	8350 3050 8500 3050
 Entry Wire Line
 	8800 3150 8700 3050
 Wire Wire Line
 	8800 3150 9350 3150
 Text Label 8800 3150 0    50   ~ 0
 XCVR_TXD_CON
-Entry Wire Line
-	8600 3250 8500 3150
-Wire Wire Line
-	8600 3250 9350 3250
-Text Label 8800 3250 0    50   ~ 0
-XCVR_RXD
-Entry Wire Line
-	8600 3550 8500 3450
-Entry Wire Line
-	8600 3750 8500 3650
 Wire Wire Line
 	8800 3450 9350 3450
 Wire Wire Line
 	8800 3650 9350 3650
-Wire Wire Line
-	8600 3750 9350 3750
 Text Label 8800 3450 0    50   ~ 0
 XCVR_RTS_CON
-Text Label 8800 3550 0    50   ~ 0
-XCVR_CTS
 Text Label 8800 3650 0    50   ~ 0
 XCVR_DTR_CON
-Text Label 8800 3750 0    50   ~ 0
-XCVR_DSR
 $Sheet
 S 12050 5000 2500 1500
 U 606D9B1D
@@ -1469,12 +1396,6 @@ F 3 "~" H 7900 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 5250 7000 5250
-Wire Wire Line
-	5750 5500 7450 5500
-Wire Wire Line
-	5750 5750 7900 5750
-Wire Wire Line
 	7000 4950 7000 4750
 Connection ~ 7000 4750
 Wire Wire Line
@@ -1497,19 +1418,19 @@ Wire Wire Line
 Wire Wire Line
 	4850 5800 4950 5800
 Wire Wire Line
-	3450 6800 4850 6800
+	3450 6800 4600 6800
 Wire Wire Line
 	4750 6700 4750 5550
 Wire Wire Line
 	4750 5550 4950 5550
 Wire Wire Line
-	3450 6700 4750 6700
+	3450 6700 4400 6700
 Wire Wire Line
 	4650 6600 4650 5300
 Wire Wire Line
 	4650 5300 4950 5300
 Wire Wire Line
-	3450 6600 4650 6600
+	3450 6600 4200 6600
 Wire Wire Line
 	5600 4750 7000 4750
 Connection ~ 7000 5250
@@ -1518,12 +1439,6 @@ Connection ~ 7900 5750
 Wire Wire Line
 	7900 4750 8000 4750
 Connection ~ 7900 4750
-Wire Wire Line
-	7000 5250 8600 5250
-Wire Wire Line
-	7450 5500 8600 5500
-Wire Wire Line
-	7900 5750 8600 5750
 Entry Wire Line
 	8800 3450 8700 3350
 Entry Wire Line
@@ -1596,17 +1511,161 @@ Wire Wire Line
 Wire Wire Line
 	5750 5850 5850 5850
 Wire Wire Line
-	8600 3550 9350 3550
+	4200 6900 4200 6600
+Connection ~ 4200 6600
+Wire Wire Line
+	4200 6600 4650 6600
+Wire Wire Line
+	4400 7000 4400 6700
+Connection ~ 4400 6700
+Wire Wire Line
+	4600 7400 4600 7450
+Wire Wire Line
+	4400 7300 4400 7500
+Wire Wire Line
+	4200 7200 4200 7550
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5FD6F1B1
+P 4200 7050
+AR Path="/5F9E7705/606D9B1D/5FD6F1B1" Ref="JP?"  Part="1" 
+AR Path="/5F9E7705/5FD6F1B1" Ref="JP10"  Part="1" 
+F 0 "JP10" V 4100 6900 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 4245 7118 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4200 7050 50  0001 C CNN
+F 3 "~" H 4200 7050 50  0001 C CNN
+	1    4200 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5FD79818
+P 4400 7150
+AR Path="/5F9E7705/606D9B1D/5FD79818" Ref="JP?"  Part="1" 
+AR Path="/5F9E7705/5FD79818" Ref="JP11"  Part="1" 
+F 0 "JP11" V 4300 7000 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 4445 7218 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4400 7150 50  0001 C CNN
+F 3 "~" H 4400 7150 50  0001 C CNN
+	1    4400 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5FD79D47
+P 4600 7250
+AR Path="/5F9E7705/606D9B1D/5FD79D47" Ref="JP?"  Part="1" 
+AR Path="/5F9E7705/5FD79D47" Ref="JP18"  Part="1" 
+F 0 "JP18" V 4500 7100 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 4645 7318 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4600 7250 50  0001 C CNN
+F 3 "~" H 4600 7250 50  0001 C CNN
+	1    4600 7250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 6700 4750 6700
+Wire Wire Line
+	4600 7100 4600 6800
+Connection ~ 4600 6800
+Wire Wire Line
+	4600 6800 4850 6800
+Wire Wire Line
+	7000 5250 8600 5250
+Wire Wire Line
+	7450 5500 8600 5500
+Wire Wire Line
+	7900 5750 8600 5750
+Wire Wire Line
+	4600 7450 6650 7450
+Wire Wire Line
+	4400 7500 6700 7500
+Wire Wire Line
+	4200 7550 6750 7550
+Text Notes 4750 7300 0    39   Italic 0
+Solder jumpers if nether MAX driver nor OR gate is installed.\nBypasses directly to XCVR_*_CON
+Wire Wire Line
+	5350 1950 5500 1950
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 5FF595C7
+P 5650 1950
+F 0 "JP1" H 5450 2000 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 5650 2064 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5650 1950 50  0001 C CNN
+F 3 "~" H 5650 1950 50  0001 C CNN
+	1    5650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1950 6250 1950
+Wire Wire Line
+	5800 2050 6250 2050
+Wire Wire Line
+	5800 2150 6250 2150
+Wire Wire Line
+	5800 2250 6250 2250
+Wire Wire Line
+	5800 2350 6250 2350
+Wire Wire Line
+	5800 2450 6250 2450
+Text Label 1050 6400 0    50   ~ 0
+TXD
+Text Label 1050 6300 0    50   ~ 0
+DTR
+Text Label 1050 6200 0    50   ~ 0
+RTS
+Text GLabel 3800 6200 2    50   Input ~ 0
+XCVR_CTS
+Wire Wire Line
+	3450 6200 3800 6200
+Text GLabel 3800 6300 2    50   Input ~ 0
+XCVR_DSR
+Text GLabel 3800 6400 2    50   Input ~ 0
+XCVR_RXD
+Wire Wire Line
+	3450 6400 3800 6400
+Wire Wire Line
+	3450 6300 3800 6300
+Text GLabel 8400 3550 0    50   Input ~ 0
+XCVR_CTS
+Text GLabel 8400 3750 0    50   Input ~ 0
+XCVR_DSR
+Text GLabel 8400 3250 0    50   Input ~ 0
+XCVR_RXD
+Wire Wire Line
+	8400 3250 9350 3250
+Wire Wire Line
+	8400 3750 9350 3750
+Wire Wire Line
+	5750 5250 6750 5250
+Wire Wire Line
+	5750 5500 6700 5500
+Wire Wire Line
+	5750 5750 6650 5750
+Wire Wire Line
+	6650 7450 6650 5750
+Connection ~ 6650 5750
+Wire Wire Line
+	6650 5750 7900 5750
+Wire Wire Line
+	6700 7500 6700 5500
+Connection ~ 6700 5500
+Wire Wire Line
+	6700 5500 7450 5500
+Wire Wire Line
+	6750 7550 6750 5250
 Wire Bus Line
 	7700 1200 7700 1450
-Wire Bus Line
-	4300 5800 4300 6300
-Wire Bus Line
-	8500 3050 8500 3650
+Wire Wire Line
+	8400 3550 9350 3550
 Wire Bus Line
 	950  6000 950  6700
 Wire Bus Line
 	8700 3050 8700 5650
 Wire Bus Line
 	6350 1000 6350 2600
+Connection ~ 6750 5250
+Wire Wire Line
+	6750 5250 7000 5250
 $EndSCHEMATC
