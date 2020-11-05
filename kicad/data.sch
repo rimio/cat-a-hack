@@ -13,22 +13,22 @@ Comment2 "UART interface"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1350 1650 2    50   Input ~ 0
+Text GLabel 1550 1750 2    50   Input ~ 0
 USB_D-
 $Comp
 L power:GND #PWR?
 U 1 1 5FAB43A9
-P 950 2050
+P 1150 2150
 AR Path="/5FAB43A9" Ref="#PWR?"  Part="1" 
 AR Path="/5F9E7705/5FAB43A9" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 950 1800 50  0001 C CNN
-F 1 "GND" H 955 1877 50  0000 C CNN
-F 2 "" H 950 2050 50  0001 C CNN
-F 3 "" H 950 2050 50  0001 C CNN
-	1    950  2050
+F 0 "#PWR03" H 1150 1900 50  0001 C CNN
+F 1 "GND" H 1155 1977 50  0000 C CNN
+F 2 "" H 1150 2150 50  0001 C CNN
+F 3 "" H 1150 2150 50  0001 C CNN
+	1    1150 2150
 	1    0    0    -1  
 $EndComp
-Text GLabel 1350 1750 2    50   Input ~ 0
+Text GLabel 1550 1850 2    50   Input ~ 0
 USB_D+
 $Comp
 L Power_Protection:SN65220 U?
@@ -225,59 +225,31 @@ RXLED
 Text Notes 5400 4400 0    39   ~ 0
 * See Chapter 7.1 of FT232R datasheet
 $Comp
-L Device:C_Small C?
-U 1 1 5FD78EA5
-P 2000 1600
-AR Path="/5FD78EA5" Ref="C?"  Part="1" 
-AR Path="/5F9D7A3C/5FD78EA5" Ref="C?"  Part="1" 
-AR Path="/5F9E7705/5FD78EA5" Ref="C6"  Part="1" 
-F 0 "C6" H 1900 1650 50  0000 C CNN
-F 1 "10n" H 2100 1550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2000 1600 50  0001 C CNN
-F 3 "~" H 2000 1600 50  0001 C CNN
-	1    2000 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FD78EB1
-P 2000 1750
-AR Path="/5FD78EB1" Ref="#PWR?"  Part="1" 
-AR Path="/5F9D7A3C/5FD78EB1" Ref="#PWR?"  Part="1" 
-AR Path="/5F9E7705/5FD78EB1" Ref="#PWR09"  Part="1" 
-F 0 "#PWR09" H 2000 1500 50  0001 C CNN
-F 1 "GND" H 2000 1600 50  0000 C CNN
-F 2 "" H 2000 1750 50  0001 C CNN
-F 3 "" H 2000 1750 50  0001 C CNN
-	1    2000 1750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR?
 U 1 1 5FD78EC1
-P 2550 1350
+P 2250 1450
 AR Path="/5FD78EC1" Ref="#PWR?"  Part="1" 
 AR Path="/5F9D7A3C/5FD78EC1" Ref="#PWR?"  Part="1" 
 AR Path="/5F9E7705/5FD78EC1" Ref="#PWR011"  Part="1" 
-F 0 "#PWR011" H 2550 1200 50  0001 C CNN
-F 1 "VCC" H 2567 1523 50  0000 C CNN
-F 2 "" H 2550 1350 50  0001 C CNN
-F 3 "" H 2550 1350 50  0001 C CNN
-	1    2550 1350
+F 0 "#PWR011" H 2250 1300 50  0001 C CNN
+F 1 "VCC" H 2267 1623 50  0000 C CNN
+F 2 "" H 2250 1450 50  0001 C CNN
+F 3 "" H 2250 1450 50  0001 C CNN
+	1    2250 1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Ferrite_Bead_Small FB?
 U 1 1 5FD78EC7
-P 2250 1450
+P 1800 1550
 AR Path="/5FD78EC7" Ref="FB?"  Part="1" 
 AR Path="/5F9D7A3C/5FD78EC7" Ref="FB?"  Part="1" 
 AR Path="/5F9E7705/5FD78EC7" Ref="FB2"  Part="1" 
-F 0 "FB2" V 2050 1450 50  0000 C CNN
-F 1 "BLM31KN102SH1L" V 2150 1450 31  0000 C CNN
-F 2 "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 2180 1450 50  0001 C CNN
-F 3 "~" H 2250 1450 50  0001 C CNN
-	1    2250 1450
+F 0 "FB2" V 1600 1550 50  0000 C CNN
+F 1 "BLM31KN102SH1L" V 1700 1550 31  0000 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1730 1550 50  0001 C CNN
+F 3 "~" H 1800 1550 50  0001 C CNN
+	1    1800 1550
 	0    1    1    0   
 $EndComp
 Text Notes 550  750  0    157  ~ 31
@@ -513,8 +485,6 @@ Wire Wire Line
 	6100 4100 6250 4100
 Wire Wire Line
 	5650 4100 5800 4100
-Wire Wire Line
-	2000 1500 2000 1450
 Wire Notes Line
 	3000 500  3000 4500
 Wire Wire Line
@@ -668,64 +638,57 @@ Text Notes 8050 1500 0    39   Italic 0
 Use jumper
 Text Notes 10400 1000 0    39   Italic 0
 Screw terminal
-Wire Wire Line
-	2000 1450 2150 1450
-Connection ~ 2000 1450
-Wire Wire Line
-	2350 1450 2550 1450
 $Comp
 L Device:R_Small R?
 U 1 1 5FFE7E60
-P 2550 1600
+P 2250 1700
 AR Path="/5FFE7E60" Ref="R?"  Part="1" 
 AR Path="/5F9D7A3C/5FFE7E60" Ref="R?"  Part="1" 
 AR Path="/5F9E7705/5FFE7E60" Ref="R10"  Part="1" 
-F 0 "R10" H 2450 1600 50  0000 C CNN
-F 1 "470" H 2650 1600 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2550 1600 50  0001 C CNN
-F 3 "~" H 2550 1600 50  0001 C CNN
-	1    2550 1600
+F 0 "R10" H 2150 1700 50  0000 C CNN
+F 1 "470" H 2350 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2250 1700 50  0001 C CNN
+F 3 "~" H 2250 1700 50  0001 C CNN
+	1    2250 1700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 5FFE90D2
-P 2550 1900
+P 2250 2000
 AR Path="/5FFE90D2" Ref="D?"  Part="1" 
 AR Path="/5F9D7A3C/5FFE90D2" Ref="D?"  Part="1" 
 AR Path="/5F9E7705/5FFE90D2" Ref="D2"  Part="1" 
-F 0 "D2" V 2550 2000 50  0000 C CNN
-F 1 "BG1102W-TR" H 2450 1750 50  0000 C CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2550 1900 50  0001 C CNN
-F 3 "~" H 2550 1900 50  0001 C CNN
-	1    2550 1900
+F 0 "D2" V 2250 2100 50  0000 C CNN
+F 1 "BG1102W-TR" H 2150 1850 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2250 2000 50  0001 C CNN
+F 3 "~" H 2250 2000 50  0001 C CNN
+	1    2250 2000
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FFEA299
-P 2550 2100
+P 2250 2200
 AR Path="/5FFEA299" Ref="#PWR?"  Part="1" 
 AR Path="/5F9D7A3C/5FFEA299" Ref="#PWR?"  Part="1" 
 AR Path="/5F9E7705/5FFEA299" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 2550 1850 50  0001 C CNN
-F 1 "GND" H 2555 1927 50  0000 C CNN
-F 2 "" H 2550 2100 50  0001 C CNN
-F 3 "" H 2550 2100 50  0001 C CNN
-	1    2550 2100
+F 0 "#PWR012" H 2250 1950 50  0001 C CNN
+F 1 "GND" H 2255 2027 50  0000 C CNN
+F 2 "" H 2250 2200 50  0001 C CNN
+F 3 "" H 2250 2200 50  0001 C CNN
+	1    2250 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 1700 2000 1750
+	2250 1800 2250 1850
 Wire Wire Line
-	2550 1700 2550 1750
+	2250 2150 2250 2200
 Wire Wire Line
-	2550 2050 2550 2100
+	2250 1600 2250 1550
 Wire Wire Line
-	2550 1500 2550 1450
-Wire Wire Line
-	2550 1450 2550 1350
-Connection ~ 2550 1450
+	2250 1550 2250 1450
+Connection ~ 2250 1550
 Text Notes 550  4750 0    157  ~ 31
 UART isolation + crossover
 Text GLabel 850  6000 0    50   Input ~ 0
@@ -1043,8 +1006,6 @@ F 9 "VOR1121B6T" H 10250 600 50  0001 L CNN "Manufacturer_Part_Number"
 	1    8900 1200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 1100 4650 1200
 Connection ~ 4650 1200
 $Comp
 L Device:Ferrite_Bead_Small FB?
@@ -1446,21 +1407,19 @@ Entry Wire Line
 $Comp
 L Connector:USB_B J2
 U 1 1 5F9FA669
-P 950 1650
-F 0 "J2" H 950 2100 50  0000 C CNN
-F 1 "USB_B" H 950 2000 50  0000 C CNN
-F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 1100 1600 50  0001 C CNN
-F 3 " ~" H 1100 1600 50  0001 C CNN
-	1    950  1650
+P 1150 1750
+F 0 "J2" H 1150 2200 50  0000 C CNN
+F 1 "USB_B" H 1150 2100 50  0000 C CNN
+F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 1300 1700 50  0001 C CNN
+F 3 " ~" H 1300 1700 50  0001 C CNN
+	1    1150 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 1650 1350 1650
+	1450 1750 1550 1750
 Wire Wire Line
-	1250 1750 1350 1750
-Wire Wire Line
-	1250 1450 2000 1450
-NoConn ~ 850  2050
+	1450 1850 1550 1850
+NoConn ~ 1050 2150
 Text GLabel 10350 1400 3    50   Input ~ 0
 XCVR_PTT-
 Wire Wire Line
@@ -1658,6 +1617,12 @@ Wire Wire Line
 Connection ~ 6750 5250
 Wire Wire Line
 	6750 5250 7000 5250
+Wire Wire Line
+	4650 1100 4650 1200
+Wire Wire Line
+	1450 1550 1700 1550
+Wire Wire Line
+	1900 1550 2250 1550
 Wire Bus Line
 	7700 1200 7700 1450
 Wire Wire Line
