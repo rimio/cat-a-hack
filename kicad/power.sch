@@ -55,7 +55,7 @@ AR Path="/60943CCC" Ref="L?"  Part="1"
 AR Path="/5F9D7A3C/60943CCC" Ref="L1"  Part="1" 
 F 0 "L1" V 3050 3600 50  0000 C CNN
 F 1 "6.8u" V 3150 3600 50  0000 C CNN
-F 2 "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3100 3600 50  0001 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3100 3600 50  0001 C CNN
 F 3 "~" H 3100 3600 50  0001 C CNN
 	1    3100 3600
 	0    1    1    0   
