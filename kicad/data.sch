@@ -13,7 +13,7 @@ Comment2 "UART interface"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1550 1750 2    50   Input ~ 0
+Text GLabel 1550 1850 2    50   Input ~ 0
 USB_D-
 $Comp
 L power:GND #PWR?
@@ -28,7 +28,7 @@ F 3 "" H 1150 2150 50  0001 C CNN
 	1    1150 2150
 	1    0    0    -1  
 $EndComp
-Text GLabel 1550 1850 2    50   Input ~ 0
+Text GLabel 1550 1750 2    50   Input ~ 0
 USB_D+
 $Comp
 L Power_Protection:SN65220 U?
